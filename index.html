@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link untuk font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
+<!-- 2
+ -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Meddon&family=Pixelify+Sans:wght@700&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- modal option -->
+    <section class="modal hidden">
+            <h1 class="title">Option</h1>
+            <div class="btn-top">
+                <audio src="assets/music/underwater.mp3" controls hidden loop id="music"></audio>
+                <!-- <img src="user.png" width="50px" height="50px" alt="user" /> -->
+                <button class="btn music" onclick="playAudio()"><img src="assets/img/home/music-logo.png" id="music_image"></button>
+                <button class="btn audio" onclick="pauseAudio()"><img src="assets/img/home/Pause.png"></button>
+            </div>
+            <div class="btn-center">
+                <button class="btn tutor">Reset Tutorial</button>
+                <button class="btn video">Video</button>
+                <button class="btn credit">credit</button>
+                <button class="btn mgame">More Games!</button>
+            </div>
+            <div class="btn-foot">
+                <button class="btn-close">Exit</button>
+            </div>
+              
+                <div class="option-button">
+              <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+              </div>
+            </section>
+            
+    <!-- modal medsos -->
+    <section class="modal2 hidden">
+        <h1 class="title">Medsos</h1>
+        <div class="btn-center">
+            <a href=""><img src="assets/img/home/mss (1).png" alt=""></a>
+            <a href=""><img src="assets/img/home/mss (3).png" alt=""></a>
+            <a href=""><img src="assets/img/home/mss (4).png" alt=""></a>
+        </div>
+        <div class="btn-foot">
+            <button class="btn-close2">Exit</button>
+        </div>
+          
+            <div class="option-button">
+          <!-- <input type="email" id="email" placeholder="brendaneich@js.com" /> -->
+          </div>
+        </section>
+
+    <!-- Container -->
+    <div class="Container">
+        <h1 class="title-awal">Morigami</h1>
+        <div class="C1">
+    <a href="gameplay.html"><img src="assets/img/home/start.png"></a>
+    <br>
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open btn-setting">Option</button>
+    <br>
+    <div class="overlay2 hidden"></div>
+    <button class="btn btn-open2 btn-medsos">Medsos</button>
+    <br>
+    <button class="btn Exit">Exit</button>
+</div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

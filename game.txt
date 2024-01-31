@@ -1,0 +1,22 @@
+
+project setup clone >
+player creation >
+Gravity >
+Player movement >
+Platform >
+"scrool" the background >
+win scenario >
+image platform >
+Parallax Scroll >
+Death pits >
+Level creation >
+Fine-tunning >
+sprite chara
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ilplcm9PcmFnbWFpbC5jb20iLCJ1c2VybmFtZSI6IlpPT3JBIiwiaWF0IjoxNjk5NTI0MDM4fQ.9CqxCBsU6YN4c69HJ5qJJsjCN3Ap_hwd_dD45LnxUjE
+
+player right animations
+player.currentSprite = player.sprites.run.right
+player.currentCropWidth = player.sprites.run.cropWidth
+
+player.width = player.sprites.run.width

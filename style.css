@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(assets/img/home/cafe-bg.gif);
+    background-size: cover;
+}
+/* 
+.C1 .btn-setting{
+    width: 20%;
+    height: 20%;
+    background: transparent;
+} */
+
+.Container{
+    width: 100%;
+}
+
+.title-awal{
+
+    width: 100%;
+    margin-top: 5%;
+    font-size:70px;
+    height: 150px;
+    text-align: center;
+    background: -webkit-linear-gradient(white,aqua, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    font-family: 'Lobster', sans-serif;
+    font-family: 'Meddon', cursive;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Rock Salt', cursive;
+    /* box-shadow:  7px -7px 18px 3px aqua; */
+        box-sizing: 10px 10px;
+}
+
+.C1{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 15%;
+}
+
+.C1 img{
+    width: 30%;
+}
+
+.C1 .btn{
+    
+    font-size: 25px;
+    font-family: 'Lobster', sans-serif;
+font-family: 'Pixelify Sans', sans-serif;
+    padding: 30px 5px;
+    background-image: linear-gradient(aqua,blue,darkblue);
+    color: white;
+    border-radius: 20px;
+    margin-top: 35px;
+    width: 30%;
+}
+
+
+.modal,.modal2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 200px;
+    position: absolute;
+    top: 20%;
+    background:linear-gradient(black,blue,aqua);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes animatetop {
+    from {top: 0px; opacity: 0}
+    to {top: 195px; opacity: 1}
+  }
+
+  .modal .btn-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .btn-top .btn{
+       margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background:linear-gradient(green,lime);
+    box-shadow: 0px 5px 20px black;
+
+   }
+
+.modal .btn-center .btn {
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: medium;
+    text-align: center;
+    border-radius: 10px;
+    background:linear-gradient(green,lime,cyan);
+    box-shadow: 0px 5px 20px black;
+
+}
+
+.modal .btn-center,.btn-foot,
+.modal2 .btn-center,.btn-foot{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 90px;
+   }
+
+   .btn img{
+    width: 40px;
+    text-align: center;
+   }
+
+  .modal input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .modal p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+  } 
+  
+  /* .btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+  } */
+/*   
+  .btn-open {
+    position: absolute;
+    bottom: 150px;
+  } */
+  
+  .btn-close ,.btn-close2{
+    margin-top: 10%;
+    font-size: large;
+    width: 450px;
+    color: black;
+    font-weight: 600;
+    /* transform: translate(10px, -20px); */
+    /* padding: 0.5rem 0.7rem; */
+    background: linear-gradient(aqua,blue);
+    border-radius: 20px;
+
+  }
+
+  .overlay,.overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+  }
+
+  .modal {
+    z-index: 2;
+  }
+
+  .modal2{
+    z-index: 4;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .modal .title,.modal2 .title{
+    width: 100%;
+    margin-top: 5%;
+    font-size:55px;
+    text-align: center;
+    background: -webkit-linear-gradient(white,lime,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    font-family: 'Lobster', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    position: relative;
+    min-height: 100vh;
+  }
+.modal2 .btn-center a{
+  width: 100%;
+}
+.modal2 .btn-center a img{
+  padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  width: 45%;
+  box-shadow: 0 10px 30px black;
+
+}
