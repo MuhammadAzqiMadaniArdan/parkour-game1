@@ -1,0 +1,146 @@
+
+-------------------------------------Materi API-------------------------------------
+
+API adalah suatu layanan (penghantar)
+
+Rest api hanyalah suatu gaya arsitektural (gaya ngoding) bukan aturan baku 
+jika tidak mengikuti aturan akan tetap jalan
+
+Ilustrasi dari sebuah restoran 
+API -> pelayan yang melayani
+Rest API -> Menu atau aturan yang harus dipatuhi di restoran tersebut (jika pelanggan menginginkan makanan harus yang berada di menu jika tdak maka tidak bisa dilayani ||
+tapi apabila pelanggan memilih hal lain tidak bisa koki dapur masih bisa masak makanan tersebut )
+Request dan response -> Pesanan dari pelanggan dan respons dari bagian dapur akan pesanan tersebut
+JSON -> Hasil akhir /Hasil saja yang dihasilkan oleh ketiga elemen diatas dan dibentuk dalam bentuk JSON(Javascript Original N )
+
+URL -> menu halaman yang dituju pada sebuah website
+URL (Uniform Resorce Locator )
+URL -> alamat untuk mrngambil resource dari suatu website (HTML,CSS,JS(script))
+
+REST API 
+-Representational State Transfer
+Gaya perancangan ? archictural style
+-stateless
+Dibuat : Roy FIelding 
+-Hampir selalu kmenggunakan HTTP
+-Memungkinkan interaksi antar mesin
+
+HTTP
+(user)-(server)
+Tipe Get
+Meminta request-menampilkan response
+
+Tipe Post
+Mengurimkan request besrta data didalam form - menerima respose beripa HTML
+
+-Rest API ---- 2-----
+
+Data kronolgis
+
+(aplikasi cli) - (server) - (Rest Server)
+(Rest client){
+Mengirimkan request besrta data jika ada -mengirimkan request dan mengubah data menjadi json (agar interaksi antar mesin terjadi) 
+
+dapat terjadi atau terhubun kebeberapa aplikasi meliputi cloud, mobule,pc}
+
+- Menerima respon berupa Json besrta kode status ke server aplikasi sendiri (terjadinya interaksi mesin dengan mesin) - mengubah respon menjadi html dari server sendiri ke user
+
+--Kode Status--
+-200 - success
+-404 - not found
+-500 -Server Error
+
+KOde status dibutuhkan untuk menghubungkan pembicaraan (interaksi) dari mesin ke mesin (server ke rest api dan sebaliknya)
+
+----HTTP Methods----
+-Get
+Mengambil Data
+-Post
+Menambah Data
+
+Tidak bisa menggunakan browser :
+-Put
+Mengubah Data
+-Delete
+-Menghapus Data
+
+Ketika keempat point methods berada dalam suatu website maka ebsite sudah mencapai end point
+
+----Stateless----
+
+-Setiap request HTTP dilakukan secara terisolasi
+-Server tidak menyimpan state apapun mengenai sesi dari client (data sendiri (server) tidak boleh mengetahui siapa saja yang sedang login)
+-Setiap request dari client harus berisi semua informasi yang dibutuhkan server.termasuk informasi autentikasi (sebelum user memilih suatu akun atau metose pemayaran harus diautentikasi (dicek ) terlebih dahulu agar mesin fdapat mengetahui apakah itu benar atau tidak)
+
+
+---Restful API (mengunakan api secara benar) ---
+-Menggunakan HTTP method yang benar
+-URL / Endpoints-nya menggunakan kata benda,bukan kata kerja (contoh : localhost/student/tambah (tidak diperbolehkan) ; localhost/student/ (diperbolehkan) )
+-Stateless
+
+
+-------------------------------JSON(vid3)---------------------------------
+
+-Javascript Object Notation(JSON) -> file dormat standar yang menggunakan tulisan yang dapat diabaca oleh manusia juga mesin untuk pertukaran data (yg didalamnya berisi pasangan antara key dan value)
+
+> fungsi utama atau kelebihan
+-format pertukaran data tekstual yang sangat ringan
+-Sintaksnya dangat sederhana dan jelas (dibanding penggunaan sebelunya : XML)
+-Dapat digunakan apda beragam bahasa pemrograman (relatif )
+-Tiap bahsan pemrograman memiliki cara tersendiri utk memanggil JSON
+
+>Syarat dan ketentua pemakaina JSOn
+-Dibuat berdasarkan format Object pada javascript
+-Digunakan untuk file konfigurasi (config file) (tidak disarankan)
+-Tipe file JSON memiliki ekstensi .json
+-Foramat JSON dibuat->diusulkan oleh Douglas Crockford
+
+---Object---
+
+-Object pada javascript adalah kumpulan property , dan property ditulis dalam bentuk pasangan antara key dan value
+
+>contoh Object Literal----
+
+var Orang = {
+	nama:'Sandhika Galih',
+	umur: 31,
+	pekerjaan : 'Dosen',
+	//ketiga unsur diatas adalah sebuah property
+	sapa : function () {
+		return 'Hi, nama Saya ' + this.nama +
+			'usia saya' + this.umur +
+			'dan saya adalah ' + this.pekerjaan;
+	unsur sapa diatas merupakan suatu method
+  }
+}
+
+--JSON TIDAK BOLEH MEMILIKI METHOD DIDALAMNYA
+
+(key) : (value)
+"nama" : "Sandhika Galih"
+->Di object biasa key tidak perlu memakai tanda kutip hayan di file JSON saja
+
+--Tipe Data dari balue pada JSON
+-Boolean -> true / false (tak perlu tanda kutip)
+-Array -> ["value1","value2",...]
+-String -> teks/unicode,dibungkus menggunakan tanda kutip ""
+-Object -> {"key" : "value" }
+-Number -> integer / float
+-Null -> null 
+
+Agar mudah menghafalkan tipe data pada Json dapat dijadikan kata
+		"BASONN" -> Diambil dari huruf pertama setiap tipe data
+
+Syntax PHP untuk memanggil atau mengubah JSon
+-json_encode()->mengubah tipe array assoc ke bentuk json
+-json_decode()->mengubah tipe json menjadi bentuk array jika diakhir fungsi ini ditambahkan ,true) maka array akan bertipe assosiatif
+
+---Membaca file json
+mengambil data json dari file
+-file_get_contents('namafile,json');
+
+
+
+
+
+
